@@ -1,0 +1,157 @@
+span, td {
+  display: inline-block;
+  margin-left: 20px;
+  color: green;
+}
+
+div {
+  margin-left: 20px;
+}
+
+code {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background: rgba(150, 150, 150, 0.1);
+  padding: 5px 10px 7px;
+  line-height: 1.4rem;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+table {
+  margin-left: 20px;margin-bottom: 20px;
+}
+
+nav a {
+  margin-left: 10;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif;
+  color: #404040;
+  font-size: 0.9rem;
+}
+
+header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+nav header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+section ul li {
+  line-height: 1.6rem;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted;
+}
+
+section:last-of-type {
+  border: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+  overflow: auto;
+  background: rgba(200, 200, 200, 0.3);
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  list-style: none;
+  padding-left: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav ul li {
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+nav ul li:last-of-type {
+  border-bottom: none;
+}
+
+nav ul li:first-of-type {
+  border-top: none;
+}
+
+ul {
+  list-style: circle;
+}
+
+@media (min-width: 600px) {
+body {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 250px;
+  position: fixed;
+  justify-content: space-evenly;
+  background: rgba(200, 200, 200, 0.3);
+  padding-right: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  left: 260px;
+  padding-top: 20px;
+}
+
+nav ul {
+  height: 100vh;
+  background: transparent;
+  gap: 20px;
+  border: none;
+  width: 100%;
+}
+
+nav {
+  border-right: 2px solid #adadad;
+  padding-right: 0;
+}
+
+nav header {
+  text-align: left;
+  padding-left: 30px;
+}
+
+nav ul li:first-of-type {
+  border-top: 1px solid;
+}
+}
